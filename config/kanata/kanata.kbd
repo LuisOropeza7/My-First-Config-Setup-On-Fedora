@@ -1,0 +1,36 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  a s d f j k l ;
+)
+
+(defvar
+  ;; Subimos un poco el tiempo base
+  tap-timeout 200
+  hold-timeout 190
+)
+
+(defalias
+  ;; Usamos tap-hold-release para las teclas conflictivas.
+  ;; Esto hace que el mod solo se active si presiones OTRA tecla 
+  ;; DESPUÉS de haber pasado el tiempo de espera.
+  amod (tap-hold-release $tap-timeout $hold-timeout a lmet)
+  
+  ;; Para S y D, subimos el tiempo un poco más que el resto (210ms)
+  smod (tap-hold-release $tap-timeout 210 s lalt)
+  dmod (tap-hold-release $tap-timeout 210 d lctl)
+  
+  fmod (tap-hold-release $tap-timeout $hold-timeout f lsft)
+
+  ;; Mano Derecha
+  jmod (tap-hold-release $tap-timeout $hold-timeout j rsft)
+  kmod (tap-hold-release $tap-timeout 210 k rctl)
+  lmod (tap-hold-release $tap-timeout 210 l ralt)
+  semmod (tap-hold-release $tap-timeout $hold-timeout ; rmet)
+)
+
+(deflayer base
+  @amod @smod @dmod @fmod @jmod @kmod @lmod @semmod
+)

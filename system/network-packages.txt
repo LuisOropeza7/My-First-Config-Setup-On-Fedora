@@ -1,0 +1,4 @@
+avahi
+avahi-tools
+nss-mdns
+firewall-config

@@ -11,28 +11,28 @@ I've been using linux as a regular user for 7 years now. Fedora was the first di
 
 **Fedora is**
 
-    - A solid distribution with a major team working behind it
-    - Stable while keeping up to date with new technologies
-    - It's a RHEL derivative, so it takes the benefits of a professional system down to the normal users
-    - It brings an opportunity to switch from home usage to professional usage.
+- A solid distribution with a major team working behind it
+- Stable while keeping up to date with new technologies
+- It's a RHEL derivative, so it takes the benefits of a professional system down to the normal users
+- It brings an opportunity to switch from home usage to professional usage.
 
 ## What I'm learning
 
-    - Linux system configuration
-    - Shell scripting
-    - Git and Documentation
-    - Debugging and problem solving
+- Linux system configuration
+- Shell scripting
+- Git and Documentation
+- Debugging and problem solving
 
 ## Things Done so Far. 
 
-    - Creation of basic scripts to install packages and repositories on a fresh fedora installation
-    - Setting up my work environment (mainly neovim)
-    - The start of my wayland configuration. 
+- Creation of basic scripts to install packages and repositories on a fresh fedora installation
+- Setting up my work environment (mainly neovim)
+- The start of my wayland configuration. 
 
 ## To-do's
 
-    - Write documentation for each script, config, and file added to this repo
-    - Keep learning
+- Write documentation for each script, config, and file added to this repo
+- Keep learning
 
 ## Disclaimer
 
